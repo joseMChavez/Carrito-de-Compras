@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carrito", "Carrito\Carrito.csproj", "{91E1C75B-A334-435C-8BF3-85162EEB9DB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{1925F01B-2B50-4A1E-80FF-EF6FF0143B98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DALL", "DALL\DALL.csproj", "{52814C69-1945-4131-AAB8-AF154E30FBCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91E1C75B-A334-435C-8BF3-85162EEB9DB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91E1C75B-A334-435C-8BF3-85162EEB9DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91E1C75B-A334-435C-8BF3-85162EEB9DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91E1C75B-A334-435C-8BF3-85162EEB9DB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1925F01B-2B50-4A1E-80FF-EF6FF0143B98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1925F01B-2B50-4A1E-80FF-EF6FF0143B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1925F01B-2B50-4A1E-80FF-EF6FF0143B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1925F01B-2B50-4A1E-80FF-EF6FF0143B98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52814C69-1945-4131-AAB8-AF154E30FBCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52814C69-1945-4131-AAB8-AF154E30FBCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52814C69-1945-4131-AAB8-AF154E30FBCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52814C69-1945-4131-AAB8-AF154E30FBCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
