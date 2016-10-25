@@ -7,14 +7,33 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet"/>
 </head>
 <body>
+    
     <form id="form1" runat="server">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">CarOnline</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="/Tienda/cTienda.aspx">Inicio</a></li>
+                    <li><a href="/Tienda/cTienda.aspx">Tienda</a></li>
+                    <li><a href="/Carrito/cCarrito.aspx">Carrito</a></li>
+                  
+                </ul>
+            </div>
+        </nav>
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
     </div>
     </form>
+      <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
+  
 </html>

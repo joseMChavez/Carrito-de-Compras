@@ -7,36 +7,45 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Carrito {
+namespace Carrito.Tienda {
     
     
-    public partial class Site {
+    public partial class cTienda {
         
         /// <summary>
-        /// head control.
+        /// DropDLFiltro control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.DropDownList DropDLFiltro;
         
         /// <summary>
-        /// form1 control.
+        /// TextBoxFiltro control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxFiltro;
         
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// ButtonBuscar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.LinkButton ButtonBuscar;
+        
+        /// <summary>
+        /// TiendaDataList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DataList TiendaDataList;
     }
 }

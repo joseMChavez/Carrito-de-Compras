@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
+using DAL;
 
 namespace BLL
 {
     public class Producto : ClaseMaestra
     {
-        public override bool Buscar(int IdBuscado)
+
+        public override bool Insertar()
         {
             throw new NotImplementedException();
         }
-
+       
+   
         public override bool Editar()
         {
             throw new NotImplementedException();
@@ -22,15 +25,21 @@ namespace BLL
         {
             throw new NotImplementedException();
         }
-
-        public override bool Insertar()
+        public override bool Buscar(int IdBuscado)
         {
             throw new NotImplementedException();
         }
 
         public override DataTable Listado(string Campos, string Condicion, string Orden)
         {
-            throw new NotImplementedException();
+            ConexionDb conexion = new ConexionDb();
+            DataTable dt = new DataTable();
+            string ordenFinal = "";
+            if (!Orden.Equals(""))
+            {
+                ordenFinal = "order by " + Orden;
+            }
+            return dt = conexion.ObtenerDatos(string.Format("select " + Campos + " from Productos where " + Condicion + ordenFinal));
         }
     }
 }
