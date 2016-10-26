@@ -36,24 +36,31 @@
                 </div>
                 <div class=" row">
                     <div class="col-sm-4">
-                        <asp:DataList ID="TiendaDataList" runat="server" BorderColor="Gray" BorderWidth="1px"  OnItemDataBound="TiendaDataList_ItemDataBound" OnSelectedIndexChanged="TiendaDataList_SelectedIndexChanged" OnItemCommand="TiendaDataList_ItemCommand">
+                        <asp:DataList ID="TiendaDataList" runat="server" BorderColor="#E7E7FF" BorderWidth="1px"  OnItemDataBound="TiendaDataList_ItemDataBound" OnSelectedIndexChanged="TiendaDataList_SelectedIndexChanged" OnItemCommand="TiendaDataList_ItemCommand" BackColor="White" BorderStyle="None" CellPadding="3" GridLines="Horizontal" RepeatDirection="Horizontal">
                     
-                    <FooterStyle BackColor="Gray" Font-Bold="True" Font-Italic="False" Font-Names="Arial Black" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" ForeColor="Gray" HorizontalAlign="Left" />
-                    <HeaderStyle BackColor="Gray" Font-Bold="True" Font-Italic="False" Font-Names="Arial Black" Font-Overline="False" Font-Size="Smaller" Font-Strikeout="False" Font-Underline="False" ForeColor="Blue" HorizontalAlign="Left" />
+                            <AlternatingItemStyle BackColor="#F7F7F7" />
+                    
+                    <FooterStyle BackColor="#B5C7DE" Font-Names="Arial Black" ForeColor="#4A3C8C" HorizontalAlign="Left" />
+                    <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" Font-Names="Arial Black" Font-Size="Smaller" ForeColor="#F7F7F7" HorizontalAlign="Left" />
+                    
+                            <ItemStyle BackColor="#E7E7FF" ForeColor="#4A3C8C" />
                     
                             <ItemTemplate>
-                                <asp:Label ID="Label1" runat="server" Text='<%# Eval("ProductosId") %>'></asp:Label>
-                                <asp:Label ID="Label2" runat="server" Text='<%# Eval("Descripcion") %>'></asp:Label>
+                                <asp:Label ID="Label1" runat="server" Text='<%# Eval("ProductosId") %>'></asp:Label><br />
+                                <b>Descripcion</b>
+                                <asp:Label ID="DLabel" runat="server" Text='<%# Eval("Descripcion") %>'></asp:Label>
                               
                                 
-                                <asp:Image ID="Image1" runat="server" ImageUrl='<%# Eval("Imagen") %>' />
-                                <br />
-                                <asp:Label ID="Label3" runat="server" Text='<%# Eval("Precio") %>'></asp:Label>
-                                <br />
-                                <asp:Label ID="Label4" runat="server" Text='<%# Eval("Cantidad") %>'></asp:Label>
+                                <asp:Image ID="ImagenP" runat="server" ImageUrl='<%# Eval("Imagen") %>' />
+                                <br /><b>Precio:</b>
+                                <asp:Label ID="PrecioLabel" runat="server" Text='<%# Eval("Precio") %>'></asp:Label>
+                                <br /><b>Cantidad</b>
+                                <asp:Label ID="CantidadLabel" runat="server" Text='<%# Eval("Cantidad") %>'></asp:Label>
                                 <br />
                                 <asp:LinkButton ID="LinkButton1" runat="server" CommandArgument=" select " CssClass=" btn btn-info" Text="Add" OnClick="LinkButton1_Click"></asp:LinkButton>
                             </ItemTemplate>
+                    
+                            <SelectedItemStyle BackColor="#738A9C" Font-Bold="True" ForeColor="#F7F7F7" />
                     
                             <SeparatorStyle BackColor="Blue" Font-Bold="True" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" ForeColor="Black" HorizontalAlign="Left" />
                     

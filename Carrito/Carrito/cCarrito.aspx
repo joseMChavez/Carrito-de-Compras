@@ -14,20 +14,7 @@
 
                 </div>
                 <asp:GridView cssClass=" table table-responsive table-bordered table-hover" ID="CarritoGridView" runat="server">
-                    <Columns>
-                        <asp:HyperLinkField
-                                        DataNavigateUrlFields="ID"
-                                        DataNavigateUrlFormatString="rPersonas.aspx?ID={0}"
-                                        Text="Ver"
-                                         ControlStyle-CssClass="label  label-info" />
-                        <%--<asp:HyperLinkField 
-                             DataNavigateUrlFields="Id"
-                             DataNavigateUrlFormatString="nombredeRegistro?Id{0}"
-                             HeaderText="ver"
-                             ControlStyle-CssClass=""
-                            />--%>
-
-                    </Columns>
+                    
                 </asp:GridView>
                
             </div>
