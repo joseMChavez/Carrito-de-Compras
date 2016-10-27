@@ -63,10 +63,9 @@
       <DependentUpon>TiendaDb.mdf</DependentUpon>
     </Content>
     <Content Include="Carrito\cCarrito.aspx" />
-    <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
-    <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\toastr.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="img\1455915673_Courses.png" />
     <Content Include="img\20150924_160330.jpg" />
@@ -80,10 +79,9 @@
     <Content Include="img\IMG-20151021-WA0001.jpg" />
     <Content Include="img\IMG-20151029-WA0000.jpg" />
     <Content Include="img\p.jpg" />
-    <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
-    <Content Include="js\jquery-3.1.0.min.js" />
-    <Content Include="js\toastr.js" />
+    <Content Include="js\jquery-2.2.0.min.js" />
+    <Content Include="js\toastr.min.js" />
     <Content Include="Tienda\cTienda.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -139,6 +137,7 @@
       <Name>BLL</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

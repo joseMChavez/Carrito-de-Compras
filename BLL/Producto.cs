@@ -9,6 +9,11 @@ namespace BLL
 {
     public class Producto : ClaseMaestra
     {
+        public int ProductoId { get; set; }
+        public string Descripcion { get; set; }
+        public int Cantidad { get; set; }
+
+        public decimal Precio { get; set; }
 
         public override bool Insertar()
         {
@@ -27,7 +32,20 @@ namespace BLL
         }
         public override bool Buscar(int IdBuscado)
         {
-            throw new NotImplementedException();
+            ConexionDb conexion = new ConexionDb();
+            DataTable dt = new DataTable();
+
+            dt = conexion.ObtenerDatos("Select * from Productos Where ProductosId=" + IdBuscado.ToString());
+
+            if (dt.Rows.Count>0)
+            {
+                this.ProductoId = (int)dt.Rows[0]["ProductosId"];
+                this.Descripcion =  dt.Rows[0]["Descripcion"].ToString();
+                this.Cantidad = (int)dt.Rows[0]["Cantidad"];
+                this.Precio = Decimal.Parse( dt.Rows[0]["Precio"].ToString());
+            }
+
+            return dt.Rows.Count > 0;
         }
 
         public override DataTable Listado(string Campos, string Condicion, string Orden)

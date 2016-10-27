@@ -15,7 +15,15 @@ namespace Carrito.Carrito
             Cart c = new Cart();
             if (!IsPostBack)
             {
-                CarritoGridView.DataSource = c.Listado("*", "1=1", "");
+
+                Cart Carrito = new Cart();
+
+                if (Session["carrito"] == null)
+                    Session["carrito"] = Carrito;
+                else
+                    Carrito = (Cart)Session["carrito"];
+
+                CarritoGridView.DataSource = Carrito.Items;
                 CarritoGridView.DataBind();
             }
         }

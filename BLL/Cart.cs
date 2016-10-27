@@ -15,7 +15,13 @@ namespace BLL
         public float Precio { get; set; }
         public int Cantidad { get; set; }
 
+
+        public List<ItemCarrito> Items { get; set; }
+
         public Cart() {
+
+            this.Items = new List<ItemCarrito>();
+
             this.Cantidad = 0;
             this.Precio = 0;
             this.Cantidad = 0;
@@ -23,6 +29,10 @@ namespace BLL
             this.Imagen = string.Empty;
         }
 
+        public void Agregar(Producto p,int cantidad)
+        {
+            this.Items.Add(new ItemCarrito(p.ProductoId, cantidad, p.Precio));
+        }
         public override bool Buscar(int IdBuscado)
         {
             throw new NotImplementedException();
